@@ -1,0 +1,3 @@
+Develop Django Projects
+Develop Streamlit projects
+Develop Django-based website to showcase portfolio
