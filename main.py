@@ -8,8 +8,8 @@ def add_todo():
     todos.append(todo)
     functions.write_todos(todos)
 
-st.title("My-To-do App")
-st.subheader("My web-based to-do app")
+st.title("Simple To-do App")
+st.subheader("Add to-do. Mark check on completion. Download list.")
 st.write("Focus. Streamline. Prioritize. Increase your daily productivity.")
 
 for index, todo in enumerate(todos):
