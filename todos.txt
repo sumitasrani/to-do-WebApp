@@ -1,3 +1,3 @@
-Develop Django Projects
 Develop Python Projects with Streamlit
 Develop Django-based website to showcase portfolio
+Develop Django Projects
