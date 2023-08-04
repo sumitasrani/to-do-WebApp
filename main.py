@@ -35,6 +35,6 @@ with open("todo.pdf", 'rb') as pdf_file:
 
 st.download_button(label="Download to-do list",
                    data=PDFByte,
-                   file_name="List.pdf",
+                   file_name="To-do List.pdf",
                    mime='application/octet-stream'
                    )
