@@ -1,3 +1,5 @@
+from fpdf import FPDF
+
 FILEPATH = "todos.txt"
 
 
@@ -16,6 +18,17 @@ def write_todos(todos_arg, filepath=FILEPATH):
     in the text file """
     with open(filepath, 'w') as file:
         file.writelines(todos_arg)
+
+
+def txt_to_pdf(filepath=FILEPATH):
+    pdf_local = FPDF(orientation="P", unit="mm", format="A4")
+    pdf_local.add_page()
+    pdf_local.set_font(family="Times", style="B", size=12)
+
+    with open(filepath, 'r') as file:
+        for i in file:
+            pdf_local.cell(w=0, h=12, txt=i, align='L', ln=1)
+    return pdf_local
 
 
 if __name__ == "__main__":
